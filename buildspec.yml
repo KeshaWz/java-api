@@ -13,5 +13,5 @@ phases:
       - echo Build completed on `date`
       - mvn package
 artifacts:
-  files:
-    - target/java-api-0.0.1-SNAPSHOT.war
+   files:
+    - target/api-0.0.1-SNAPSHOT.war
