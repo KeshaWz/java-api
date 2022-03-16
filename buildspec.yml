@@ -12,7 +12,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
+      - zip -r myArchive.zip .
 artifacts:
   files:
-    - '**/*'
-  name: "archive.zip"
+    - myArchive.zip
