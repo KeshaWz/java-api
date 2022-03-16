@@ -13,7 +13,8 @@ phases:
       - echo Build completed on `date`
       - mvn package
       - echo Attempting to zip files
-      - zip -r archive.zip appspec.yml target/api-0.0.1-SNAPSHOT.war
+      - cp target/api-0.0.1-SNAPSHOT.war .
+      - zip -r archive.zip appspec.yml api-0.0.1-SNAPSHOT.war
 artifacts:
   files:
     - archive.zip
