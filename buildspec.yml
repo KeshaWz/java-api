@@ -12,7 +12,8 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
-      - zip -r myArchive.zip appspec.yml target/java-api-0.0.1-SNAPSHOT.war
+      - echo Attempting to zip files
+      - zip -r myArchive.zip appspec.yml ./target/java-api-0.0.1-SNAPSHOT.war
 artifacts:
   files:
     - archive.zip
